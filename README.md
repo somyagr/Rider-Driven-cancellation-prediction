@@ -10,8 +10,6 @@ We added some features because we were left with very few of them after dropping
 * The hour of the day
 * If it's the start of the month (Boolean)
 
-This improved our roc_auc by 0.95, _code in rider-pred-data-cleaning.ipynb_
-
 After exploring the data, we trained various models like XGBClassifier, CatboostClassifier, KNNClassifier, etc and also their ensembles but the roc_auc_score was always less than 0.65. So we tried AutoXGB on our data which boosted our score to 0.77 on the leaderboard.
 
 We further tried smoting(very useful method for balancing skewed data) but it was overfitting the data (gave roc_auc of 0.91 in validation and 0.7 in lb)
